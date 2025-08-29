@@ -1,0 +1,28 @@
+{
+  "name": "api-biblioteca-online",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch ./src/index.js"
+  },
+  "author": "zearr11",
+  "license": "MIT",
+  "description": "Backend desarrollado para la página de BooksFree, un repositorio de libros.",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cloudinary": "^1.41.3",
+    "express": "^5.1.0",
+    "multer": "^2.0.2",
+    "multer-storage-cloudinary": "^4.0.0",
+    "mysql2": "^3.14.3",
+    "sequelize": "^6.37.7",
+    "streamifier": "^0.1.1"
+  },
+  "devDependencies": {
+    "standard": "^17.1.2"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
