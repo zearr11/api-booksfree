@@ -1,10 +1,10 @@
 import express from 'express'
-import archivoRoutes from './routes/archivo.routes.js'
-import autorRoutes from './routes/autor.routes.js'
-import categoriaRoutes from './routes/categoria.routes.js'
-import editorialRoutes from './routes/editorial.routes.js'
-import libroRoutes from './routes/libro.routes.js'
-import usuarioRoutes from './routes/usuario.routes.js'
+import fileRoutes from './routes/file.routes.js'
+import authorRoutes from './routes/author.routes.js'
+import categoryRoutes from './routes/category.routes.js'
+import publisherRoutes from './routes/publisher.routes.js'
+import bookRoutes from './routes/book.routes.js'
+import userRoutes from './routes/user.routes.js'
 import { errorHandler } from './utils/exceptions/exception.handler.js'
 
 const URL = '/api/v1'
@@ -20,12 +20,12 @@ app.use('/', (req, res, next) => {
 })
 
 // Endpoints
-app.use(`${URL}/files`, archivoRoutes)
-app.use(`${URL}/authors`, autorRoutes)
-app.use(`${URL}/categories`, categoriaRoutes)
-app.use(`${URL}/publishers`, editorialRoutes)
-app.use(`${URL}/books`, libroRoutes)
-app.use(`${URL}/users`, usuarioRoutes)
+app.use(`${URL}/files`, fileRoutes)
+app.use(`${URL}/authors`, authorRoutes)
+app.use(`${URL}/categories`, categoryRoutes)
+app.use(`${URL}/publishers`, publisherRoutes)
+app.use(`${URL}/books`, bookRoutes)
+app.use(`${URL}/users`, userRoutes)
 
 // Middleware global errors
 app.use(errorHandler)

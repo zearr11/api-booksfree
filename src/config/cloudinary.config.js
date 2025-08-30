@@ -1,7 +1,11 @@
-import { v2 as cloudinary } from 'cloudinary'
-import { CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET, CLOUDINARY_CLOUD_NAME } from './env.config.js'
 import streamifier from 'streamifier'
+import { v2 as cloudinary } from 'cloudinary'
 import { ConflictError409 } from '../utils/exceptions/models.error.js'
+import {
+  CLOUDINARY_API_KEY,
+  CLOUDINARY_API_SECRET,
+  CLOUDINARY_CLOUD_NAME
+} from './env.config.js'
 
 cloudinary.config({
   cloud_name: CLOUDINARY_CLOUD_NAME,

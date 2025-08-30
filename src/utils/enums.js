@@ -4,12 +4,12 @@ export const typeDoc = Object.freeze({
 })
 
 export const gender = Object.freeze({
-  M: 'MASCULINO',
-  F: 'FEMENINO'
+  M: 'M',
+  F: 'F'
 })
 
 export const role = Object.freeze({
-  USUARIO: 'USER',
+  USER: 'USER',
   ADMIN: 'ADMIN'
 })
 

@@ -1,5 +1,11 @@
 import Sequelize from 'sequelize'
-import { DB_HOST, MYSQL_DATABASE, MYSQL_DIALECT, MYSQL_PASSWORD, MYSQL_USER } from '../config/env.config.js'
+import {
+  DB_HOST,
+  MYSQL_DATABASE,
+  MYSQL_DIALECT,
+  MYSQL_PASSWORD,
+  MYSQL_USER
+} from '../config/env.config.js'
 
 const DATABASE = MYSQL_DATABASE
 const DB_USER = MYSQL_USER
